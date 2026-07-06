@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JWN's Blog</title>
+
+    <link rel="stylesheet" href="/assets/css/post.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+<body>
+    <button class="scroll-bottom-btn" aria-label="맨 아래로">↓</button>
+
+    <main class="post-page">
+
+        <div class="post-container">
+
+            <header class="post-header">
+
+                <div class="post-meta">
+
+                    <div class="post-tags">
+                        <span class="post-tag">Maplestory</span>
+                        <span class="tag-separator">·</span>
+                        <select class="post-tag post-type">
+                            <option value="daily">Daily Note</option>
+                            <option value="weekly">Weekly Note</option>
+                            <option value="monthly">Monthly Note</option>
+                        </select>
+                    </div>
+
+                    <input type="text" class="post-date" id="post-date" />
+
+                </div>
+
+                <h1 class="post-title">기록하기</h1>
+
+            </header>
+
+            <article class="post-content">
+                <textarea class="post-input-content" placeholder="Markdown으로 내용을 작성하세요."></textarea>
+            </article>
+
+            <button type="button" class="post-submit-btn">
+                제출하기
+            </button>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="write.js"></script>
+</body>
+
+</html>
